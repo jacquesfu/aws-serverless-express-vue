@@ -1,0 +1,15 @@
+{
+  "name": "aws-serverless-express-starter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "serverless offline"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^8.3.1"
+  }
+}
