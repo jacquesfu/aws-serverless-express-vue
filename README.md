@@ -4,7 +4,32 @@ This is a mono repo starter template for quickly starting a boilerplate for Expr
 
 ## Usage
 
+### Requirements
+
+1. Install the `serverless` framework globally
+```
+npm install -g serverless
+```
+
+1. NVM - Node Version Manager
+   - [How to Install](https://github.com/nvm-sh/nvm#installing-and-updating)
+
 ### Quick Start
+
+Before installing, or being able to run the application, the proper version of NodeJS has to be used.
+The application currently runs on Node `v12.22.9`. Having a mismatched version of node can cause issues while serving the application or during the installation.
+
+To Install the proper version of NodeJS:
+```
+nvm install
+```
+
+To set the version of node:
+```
+nvm use
+```
+
+NOTE: This must be set any time a new terminal window is opened on this repository.
 
 Install dependencies with:
 
