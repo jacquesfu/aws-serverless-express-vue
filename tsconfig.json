@@ -13,11 +13,13 @@
     "baseUrl": ".",
     "types": ["webpack-env", "jest"],
     "paths": {
-      "@/*": ["vue/*"]
+      "@/*": ["vue/*"],
+      "@express/*": ["express/*"]
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
   "include": [
+    "express/**/*.ts",
     "vue/**/*.ts",
     "vue/**/*.tsx",
     "vue/**/*.vue",
