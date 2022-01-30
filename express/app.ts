@@ -3,7 +3,6 @@ import serverless from "serverless-http";
 import express from "express";
 import indexRouter from "./routes";
 
-
 const app = express();
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
@@ -14,4 +13,4 @@ app.use((req, res, next) => {
   });
 });
 
-export const handler = serverless(app)
+module.exports.handler = serverless(app)
