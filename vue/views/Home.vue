@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
+    <p>{{ message }}</p>
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
 </template>
@@ -14,5 +15,15 @@ export default defineComponent({
   components: {
     HelloWorld,
   },
+  data() {
+    return {
+      message: ''
+    }
+  },
+  async created() {
+    const response = await fetch("http://localhost:3000")
+    const json = await response.json()
+    this.message = json.message
+  }
 });
 </script>
