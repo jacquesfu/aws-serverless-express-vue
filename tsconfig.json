@@ -14,7 +14,7 @@
     "types": ["webpack-env", "jest"],
     "paths": {
       "@/*": ["vue/*"],
-      "@express/*": ["express/*"]
+      "@api/*": ["express/*"]
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
