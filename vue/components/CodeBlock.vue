@@ -1,6 +1,7 @@
 <template>
+  <p>Response from <code class="bg-zinc-100 px-2 py-1 rounded-sm">GET /status</code></p>
   <pre>
-    <code class="whitespace-pre bg-zinc-50 block max-w-lg mx-auto flex border-solid border border-gray-100">
+    <code class="rounded-sm whitespace-pre bg-zinc-100 block max-w-lg mx-auto flex border-solid border border-gray-100">
       {{ code }}
     </code>
   </pre>
