@@ -2,6 +2,9 @@
   "name": "aws-serverless-express-starter",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "dev": "concurrently --kill-others \"npm run tailwind:buid-watch\" \"sleep 2 && npm run serve\" \"npm run api\" ",
     "api": "serverless offline",
