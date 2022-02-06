@@ -4,6 +4,7 @@ node_modules
 .DS_Store
 node_modules
 /dist
+vue/dist/
 
 
 # local env files

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "concurrently --kill-others \"npm run tailwind:buid-watch\" \"sleep 2 && npm run serve\" \"sleep 7 && npm run api\" ",
+    "dev": "concurrently --kill-others \"npm run tailwind:buid-watch\" \"sleep 2 && npm run serve\" \"npm run api\" ",
     "api": "serverless offline",
     "tailwind:buid-watch": "tailwindcss -i ./vue/main.css -o ./vue/dist/output.css --watch",
     "serve": "vue-cli-service serve --open",
