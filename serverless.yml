@@ -10,7 +10,9 @@ functions:
   api:
     handler: express/app.handler
     events:
-      - httpApi: "*"
+      - httpApi:
+          path: "/{proxy+}"
+          method: "*"
 
 plugins:
   - serverless-offline

@@ -57,6 +57,16 @@ npm run serve
 
 ### Deployment
 
+Ensure AWS cli is installed
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+Mac version of instructions:
+```
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg ./AWSCLIV2.pkg -target /
+aws configure
+```
+
 Deploy with:
 
 ```
