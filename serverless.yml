@@ -17,3 +17,24 @@ functions:
 plugins:
   - serverless-offline
   - serverless-plugin-typescript
+  - serverless-s3-sync
+	
+custom: 
+  s3Sync: 
+    - bucketName: hypervalidationvue
+      localDir: dist
+      # bucketPrefix: subdirectory-of-the-bucket/${opt:stage}/ # optional 
+      deleteRemoved: false # optional 
+      acl: public-read # we want the files to be public
+      defaultContentType: application/json # helps setting up the correct mime types
+
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-bucket.html
+# resources:
+#   Resources:
+#     frontendbucket:
+#       Type: 'AWS::S3::Bucket'
+#       Properties:
+#         BucketName: frontendbucket-${sls:instanceId}
+#         AccessControl: PublicRead
+#         WebsiteConfiguration:
+#           IndexDocument: index.html

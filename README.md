@@ -67,10 +67,18 @@ sudo installer -pkg ./AWSCLIV2.pkg -target /
 aws configure
 ```
 
+Create an s3 bucket with static hosting enabled and update the serverless.yml
+```
+# in serverless.yml change this to represent your bucket
+custom: 
+  s3Sync: 
+    - bucketName: yourbucketnamegoeshere
+```
+
 Deploy with:
 
 ```
-serverless deploy
+npm run build && serverless deploy
 ```
 
 After running deploy, you can visit the URL listed:
