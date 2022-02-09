@@ -28,7 +28,6 @@ export default defineComponent({
     }
   },
   async created() {
-    console.log(process.env.VUE_APP_API_URL)
     const response = await fetch(`${process.env.VUE_APP_API_URL}/health`)
     this.status = response.status
     this.data = await response.json()
