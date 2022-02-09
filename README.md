@@ -49,6 +49,10 @@ npm run dev
 npm run api
 ```
 
+### Handling Environment Variables for Vue
+- [link to docs](https://cli.vuejs.org/guide/mode-and-env.html#environment-variables)
+
+
 (Optional) Run VueJS Front-end independently with:
 
 ```
