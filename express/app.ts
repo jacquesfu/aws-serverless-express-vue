@@ -1,7 +1,12 @@
 import express from "express";
 import serverless from "serverless-http";
+import dotenv from "dotenv";
 import statusCheckRoutes from "./routes/status-routes";
 import usersRouter from "./routes/users/users";
+
+dotenv.config({
+  path: "./express/.env*"
+});
 
 const app = express();
 
